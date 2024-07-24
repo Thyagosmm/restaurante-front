@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('../public/wallpaper.png');
+  background-image: url(../public/wallpaper.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,14 +45,15 @@ body {
 .title {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   font-family: 'Reborn', sans-serif;
 }
 
 .title span {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 5px; /* Espaço vertical entre as palavras */
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 15px; /* Ajuste o espaçamento vertical entre as palavras */
 }
 
 .description {
@@ -89,20 +90,37 @@ body {
 .right-section .buttons button {
   margin: 10px 0;
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 1.5em;
   cursor: pointer;
   font-family: 'Cormorant Garamond', serif;
-  width: 200px; /* Tamanho fixo para todos os botões */
+  width: 350px; /* Tamanho fixo para todos os botões */
 }
 
 .right-section .social-icons {
   display: flex;
   justify-content: space-between;
-  width: 150px;
+  width: 300px;
   margin-top: 20px;
 }
 
 .right-section .social-icons i {
   font-size: 1.5em;
   cursor: pointer;
+}
+
+.right-section .buttons button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  width: 350px; /* Tamanho fixo para todos os botões */
+}
+
+/* Novo CSS para o espaço reservado */
+.right-section .buttons .placeholder {
+  width: 350px; /* O mesmo tamanho que os botões */
+  height: 50px; /* Ajuste a altura conforme necessário */
+  margin: 10px 0; /* Mesmo espaçamento que os botões */
+  background: transparent; /* Para tornar o espaço invisível */
 }

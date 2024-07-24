@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import logo from './logo.png';
 
@@ -22,12 +23,14 @@ function Home() {
       <div className="right-section">
         <div className="content-box">
           <div className="buttons">
-            <button>Cardápio</button>
+            <Link to="/cardapio">
+              <button>Cardápio</button>
+            </Link>
             <button>Pratos da Estação</button>
             <button>O Espaço</button>
             <button>FAQ de Delivery</button>
             <button>Sobre Nós</button>
-            <button>Nossa Luta</button>
+            <div className="placeholder"></div> {/* Espaço reservado */}
           </div>
           <div className="social-icons">
             <i className="fab fa-facebook"></i>
