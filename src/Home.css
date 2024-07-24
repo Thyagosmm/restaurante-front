@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../public/wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.title span {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.description span {
+  display: block;
+}
+
+.right-section .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-section .buttons button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.right-section .social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.right-section .social-icons i {
+  font-size: 1.5em;
+  cursor: pointer;
+}
