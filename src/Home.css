@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../public/wallpaper.png);
+  background-image: url('../public/wallpaper.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,15 +20,10 @@ body {
 
 .left-section,
 .right-section {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.left-section {
-  text-align: center;
 }
 
 .logo-and-title {
@@ -66,13 +61,7 @@ body {
   display: block;
 }
 
-.right-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-box {
+.right-section .content-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,19 +76,15 @@ body {
   align-items: center;
 }
 
-.right-section .buttons button {
+.right-section .buttons .btn {
   margin: 10px 0;
-  padding: 10px 20px;
-  font-size: 1.5em;
-  cursor: pointer;
-  font-family: 'Cormorant Garamond', serif;
-  width: 350px; /* Tamanho fixo para todos os botões */
+  width: 200px; /* Tamanho fixo para todos os botões */
 }
 
 .right-section .social-icons {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 150px;
   margin-top: 20px;
 }
 
@@ -107,20 +92,12 @@ body {
   font-size: 1.5em;
   cursor: pointer;
 }
-
-.right-section .buttons button {
-  margin: 10px 0;
-  padding: 10px 20px;
-  font-size: 1.5em;
-  cursor: pointer;
-  font-family: 'Cormorant Garamond', serif;
-  width: 350px; /* Tamanho fixo para todos os botões */
+.white-button {
+  background-color: white !important;
+  color: black;
+  border: 1px solid black;
 }
 
-/* Novo CSS para o espaço reservado */
-.right-section .buttons .placeholder {
-  width: 350px; /* O mesmo tamanho que os botões */
-  height: 50px; /* Ajuste a altura conforme necessário */
-  margin: 10px 0; /* Mesmo espaçamento que os botões */
-  background: transparent; /* Para tornar o espaço invisível */
+.white-button:hover {
+  background-color: #f0f0f0;
 }
