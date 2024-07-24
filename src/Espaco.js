@@ -1,5 +1,5 @@
 import React from 'react';
-import './Espaco.css'; // Certifique-se de criar e editar esse arquivo CSS
+import './Espaco.css';
 import logo from './logo.png';
 function Espaco() {
   return (

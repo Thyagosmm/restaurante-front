@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sobre.css'; // Certifique-se de criar e editar esse arquivo CSS
+import './Sobre.css';
 import logo from './logo.png';
 function Sobre() {
   return (

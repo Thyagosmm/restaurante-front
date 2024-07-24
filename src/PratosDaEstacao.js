@@ -1,5 +1,5 @@
 import React from 'react';
-import './PratosDaEstacao.css'; // Certifique-se de criar e editar esse arquivo CSS
+import './PratosDaEstacao.css';
 import logo from './logo.png';
 function PratosDaEstacao() {
   return (

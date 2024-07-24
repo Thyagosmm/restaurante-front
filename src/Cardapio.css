@@ -30,13 +30,13 @@ body {
 .logo-and-title {
   display: flex;
   align-items: center;
-  justify-content: center; /* Para centralizar logo e título */
+  justify-content: center;
 }
 
 .logo {
   width: 150px;
   height: auto;
-  margin-right: 20px; /* Espaço entre a logo e o título */
+  margin-right: 20px;
 }
 
 .title {

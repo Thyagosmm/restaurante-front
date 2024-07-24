@@ -48,7 +48,7 @@ body {
 .title span {
   font-size: 2rem;
   font-weight: normal;
-  margin-bottom: 15px; /* Ajuste o espaçamento vertical entre as palavras */
+  margin-bottom: 15px;
 }
 
 .description {
@@ -78,7 +78,10 @@ body {
 
 .right-section .buttons .btn {
   margin: 10px 0;
-  width: 200px; /* Tamanho fixo para todos os botões */
+  width: 200px;
+  background-color: white;
+  color: black; /* Define a cor do texto como preto */
+  border: 1px solid black; /* Adiciona uma borda preta */
 }
 
 .right-section .social-icons {
@@ -91,13 +94,4 @@ body {
 .right-section .social-icons i {
   font-size: 1.5em;
   cursor: pointer;
-}
-.white-button {
-  background-color: white !important;
-  color: black;
-  border: 1px solid black;
-}
-
-.white-button:hover {
-  background-color: #f0f0f0;
 }

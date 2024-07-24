@@ -36,7 +36,7 @@ body {
 .logo {
   width: 150px;
   height: auto;
-  margin-right: 20px; /* Espaço entre a logo e o título */
+  margin-right: 20px;
 }
 
 .title {
