@@ -26,10 +26,18 @@ function Home() {
             <Link to="/cardapio">
               <button>Cardápio</button>
             </Link>
-            <button>Pratos da Estação</button>
-            <button>O Espaço</button>
-            <button>FAQ de Delivery</button>
-            <button>Sobre Nós</button>
+            <Link to="/pratosdaestacao">
+              <button>Pratos da Estação</button>
+            </Link>
+            <Link to="espaco">
+              <button>O Espaço</button>
+            </Link>
+            <Link to="delivery">
+              <button>FAQ de Delivery</button>
+            </Link>
+            <Link to="sobre">
+              <button>Sobre Nós</button>
+            </Link>
             <div className="placeholder"></div> {/* Espaço reservado */}
           </div>
           <div className="social-icons">
