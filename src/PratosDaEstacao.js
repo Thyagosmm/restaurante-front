@@ -1,22 +1,34 @@
 import React from 'react';
-import './PratosDaEstacao.css';
+import { CContainer, CRow, CCol, CImage, CCardBody, CCardTitle, CCardText } from '@coreui/react';
 import logo from './logo.png';
+import './PratosDaEstacao.css';
+
 function PratosDaEstacao() {
   return (
-    <div className="cardapio-container">
-      <div className="left-section">
-        <div className="logo-and-title">
-          <img src={logo} alt="Logo" className="logo" />
-          <div className="title">
-            <span>Pratos da Estação</span>
-          </div>
-        </div>
-        <div className="description">
-          <span>COMIDA FEITA COM INGREDIENTES À</span>
-          <span>BASE DE PLANTAS E MUITO AMOR</span>
-        </div>
-      </div>
-    </div>
+    <CContainer fluid className="pratosdaestacao-container">
+      <CRow className="justify-content-center align-items-center" style={{ height: '100vh' }}>
+        <CCol xs="auto" className="text-center">
+          <CRow className="align-items-center justify-content-center logo-and-title">
+            <CCol xs="auto">
+              <CImage src={logo} alt="Logo" className="logo" />
+            </CCol>
+            <CCol xs="auto">
+              <CCardBody>
+                <CCardTitle className="title">Pratos da Estação</CCardTitle>
+              </CCardBody>
+            </CCol>
+          </CRow>
+          <CRow>
+            <CCol>
+              <CCardText className="description">
+                <div>COMIDA FEITA COM INGREDIENTES À</div>
+                <div>BASE DE PLANTAS E MUITO AMOR</div>
+              </CCardText>
+            </CCol>
+          </CRow>
+        </CCol>
+      </CRow>
+    </CContainer>
   );
 }
 
